@@ -24,3 +24,5 @@ Homestead.yaml
 Thumbs.db
 .env
 node_modules/
+.env
+node_modules/
