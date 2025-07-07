@@ -44,23 +44,22 @@ class HomeController extends Controller
     }
 
     public function index()
-    {
-        // Get data for homepage sections
-        $services = Service::take(8)->get();
-        $events = Event::latest()->take(6)->get();
-        $testimonials = Testimonial::all();
-        $teamMembers = TeamMember::take(4)->get();
-        $popularMenuItems = MenuItem::where('is_special', true)->take(4)->get();
+{
+    // Get data for homepage sections
+    $services = Service::take(8)->get();
+    $events = Event::latest()->take(6)->get();
+    $testimonials = Testimonial::all();
+    $teamMembers = TeamMember::take(4)->get();
+    $popularMenuItems = MenuItem::where('is_special', true)->take(4)->get();
 
-        return view('frontend.home', compact(
-            'services',
-            'events',
-            'testimonials',
-            'teamMembers',
-            'popularMenuItems'
-        ));
-    }
-
+    return view('frontend.home', compact(
+        'services',
+        'events',
+        'testimonials',
+        'teamMembers',
+        'popularMenuItems'
+    ));
+}
     public function about()
     {
         $teamMembers = TeamMember::all();

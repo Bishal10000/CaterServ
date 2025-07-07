@@ -8,7 +8,7 @@
     <meta content="Free Website Template" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{ asset('assets/frontend/img/favicon.ico') }}" rel="icon">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet">
@@ -16,20 +16,20 @@
     <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="{{asset('assets/frontend/lib/animate/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/frontend/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/frontend/lib/flaticon/font/flaticon.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/frontend/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
+    <link href="{{ asset('assets/frontend/lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/frontend/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/frontend/lib/flaticon/font/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/frontend/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="{{asset('assets/frontend/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
 <!-- Nav Bar Start -->
 <div class="navbar navbar-expand-lg bg-light navbar-light">
     <div class="container-fluid">
-        <a href="{{route('frontend.home')}}" class="navbar-brand">Burger <span>King</span></a>
+        <a href="{{ url('/') }}" class="navbar-brand">Burger <span>King</span></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,8 +47,8 @@
                 <h2>Food Menu</h2>
             </div>
             <div class="col-12">
-                <a href="">Home</a>
-                <a href="">Menu</a>
+                <a href="{{ url('/') }}">Home</a>
+                <a href="{{ route('frontend.menu') }}">Menu</a>
             </div>
         </div>
     </div>
@@ -117,18 +117,18 @@
 
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="{{asset('assets/frontend/https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{asset('assets/frontend/lib/easing/easing.min.js')}}"></script>
-<script src="{{asset('assets/frontend/lib/owlcarousel/owl.carousel.min.js')}}"></script>
-<script src="{{asset('assets/frontend/lib/tempusdominus/js/moment.min.js')}}"></script>
-<script src="{{asset('assets/frontend/lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
-<script src="{{asset('assets/frontend/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('assets/frontend/lib/easing/easing.min.js') }}"></script>
+<script src="{{ asset('assets/frontend/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/frontend/lib/tempusdominus/js/moment.min.js') }}"></script>
+<script src="{{ asset('assets/frontend/lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
+<script src="{{ asset('assets/frontend/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
 
 <!-- Contact Javascript File -->
-<script src="{{asset('assets/frontend/mail/jqBootstrapValidation.min.js')}}"></script>
-<script src="{{asset('assets/frontend/mail/contact.js')}}"></script>
+<script src="{{ asset('assets/frontend/mail/jqBootstrapValidation.min.js') }}"></script>
+<script src="{{ asset('assets/frontend/mail/contact.js') }}"></script>
 
 <!-- Template Javascript -->
-<script src="js/main.js"></script>
+<script src="{{ asset('assets/frontend/js/main.js') }}"></script>
 </body>
 </html>
